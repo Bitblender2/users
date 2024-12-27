@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IoIosSettings } from "react-icons/io";
 import { IoSearchSharp } from "react-icons/io5";
 import { BiSolidEdit } from "react-icons/bi";
+import "./style.css";
 
 const profileData = [
   {
@@ -39,6 +40,140 @@ const profileData = [
     message:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
   },
+  {
+    name: "Sophia Turner",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Olivia Johnson",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Liam Wilson",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "John Doe",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Jane Smith",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Michael Brown",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Emily Davis",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Wickson Kaimah",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Sophia Turner",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Olivia Johnson",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Liam Wilson",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "John Doe",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Jane Smith",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Michael Brown",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Emily Davis",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Wickson Kaimah",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Sophia Turner",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Olivia Johnson",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  {
+    name: "Liam Wilson",
+    image:
+      "https://plus.unsplash.com/premium_photo-1723489324155-d0955ccf902d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    message:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, id!",
+  },
+  // (Repeat this structure for the remaining entries)
 ];
 
 function App() {
@@ -68,7 +203,7 @@ function App() {
             placeholder="Search messages"
           />
         </div>
-        <div className="w-full flex flex-col gap-4 overflow-y-auto">
+        <div className="w-full flex flex-col gap-4  overflow-y-auto  no-scrollbar">
           {filteredProfiles.length > 0 ? (
             filteredProfiles.map((profile, index) => (
               <div
@@ -92,7 +227,7 @@ function App() {
             <p className="text-gray-500 text-center">No messages found</p>
           )}
         </div>
-        <button className="absolute bottom-4 right-4 w-10 h-10 rounded-full p-2 bg-blue-700 flex justify-center items-center">
+        <button className="absolute bottom-10 right-4 w-10 h-10 rounded-full p-2 bg-blue-700 flex justify-center items-center">
           <BiSolidEdit className="text-white text-center text-2xl" />
         </button>
       </div>
