@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className="w-[100%] h-[100vh] flex lg:justify-center bg-blue-500 lg:items-center">
-      <div className="bg-white lg:w-[25%] lg:h-[65%] w-full shadow-md flex flex-col rounded-md p-4 gap-3 relative">
+      <div className="bg-white lg:w-[25%] lg:h-[65%] w-full h-full shadow-md flex flex-col rounded-md p-4 gap-3 relative">
         <div className="flex w-full items-center justify-between border border-t-white border-l-white border-r-white border-b-blue-500 py-3 h-auto">
           <p className="text-gray-500 text-xl">Messages</p>
           <IoIosSettings className="text-gray-500 text-3xl cursor-pointer" />
